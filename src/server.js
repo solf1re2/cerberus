@@ -89,7 +89,7 @@ server.get('*', async (req, res, next) => {
     }
 
     const css = [];
-    const context = {
+      const context = {
       insertCss: styles => css.push(styles._getCss()),
       onSetTitle: value => (data.title = value),
       onSetMeta: (key, value) => (data[key] = value),
